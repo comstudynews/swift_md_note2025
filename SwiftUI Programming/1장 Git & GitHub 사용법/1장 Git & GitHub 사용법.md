@@ -430,6 +430,20 @@ Git 저장소를 초기화하면 해당 프로젝트 디렉토리가 버전 관�
 
 # **4. GitHub와 원격 저장소 연결**
 
+### Github Personal access tokens 생성
+![alt text](img/image101.png)
+1. Personal Access Token 생성
+GitHub에 로그인합니다.
+   
+2. **Settings > Developer settings > Personal Access Tokens > Tokens (classic)**로 이동합니다.
+3. Generate new token 버튼을 클릭합니다.
+4. 토큰의 이름을 입력하고, 필요한 권한을 선택합니다:
+repo (모든 리포지토리에 대한 읽기/쓰기 권한)
+workflow (Actions 관련 권한)
+5. 생성된 토큰을 복사합니다. 이 토큰은 한 번만 표시되므로 안전한 곳에 저장하세요.
+
+
+### Github 사이트 메인
 ![image.png](img/image%202.png)
 
 ### **4.1 GitHub 계정 생성**
@@ -480,6 +494,10 @@ Git 저장소를 초기화하면 해당 프로젝트 디렉토리가 버전 관�
     
     ```bash
     git remote add origin https://github.com/username/my_first_repo.git
+    ```
+    access tokens 이용
+    ```
+    git remote add origin https://계정:token@github.com/username/my_first_repo.git
     ```
     
 3. 연결된 원격 저장소 확인:
