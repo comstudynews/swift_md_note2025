@@ -8,10 +8,9 @@
 
 ![alt text](image.png)
 
-
 ### FeedController.swift
 ``` swift
-//  FeedController.swift
+// FeedController.swift
 import UIKit
 
 private let reuseIdentifier = "Cell" // 보통 그냥 "Cell"로 값을 지정.
@@ -61,7 +60,6 @@ extension FeedController {
  위 오류를 해결 해도 AppDelegate.swift에 두번째로 다음 에러가 발생 할 수 있습니다.
  Thread 1: "could not dequeue a view of kind: UICollectionElementKindCell with identifier Cell - must register a nib or a class for the identifier or connect a prototype cell in a storyboard"
  FeedController.swift의 MARK: -Hellpers에 collectionView.register 등록.
- 
  */
 
 ```
